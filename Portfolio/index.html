@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db5400783a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+        
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#photos">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">CV</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>CSE Student</p>
+            <h1>Vansh Raj Chauhan</h1>
+            <h6>University of Petroleum and Energy Studies <br> Energy Acres PO Bidholi via Prem Nagar <br> Dehradun-248007 (Uttarakhand), India 
+            </h6>
+        </div>
+    </div>
+</div>
+<!-- ABOUT ME ______________________ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="vansh.png" alt="me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>My name is Vansh Raj Chauhan. I am 18 years old. I am pursuing computer science and engineering from UPES (University of Petroleum and Energy Studies).  I completed my high school from Delhi Public School, Gurgaon. I am an enthusiast and a keen learner, offers strong communication, multi-tasking and problem solving skills along with empathy. My academic experince so far has provided me with a lot of exposure which has made me grow as a person as well as an academic. I seek to learn new skills and challenge myself to push myself to the maximum limit. I am always motivated to achieve the best which hence motivates me to work even harder to give my absolute best at any challenge or a problem that I may face. I am a web developer and a cloud enthusiast.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('cskills')">Computer Skills</p>
+                    <p class="tab-links"onclick="opentab('planguages')">Programming Languages</p>
+                    <p class="tab-links"onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="cskills">
+                    <ul>
+                        <li><span>MS Office</span></li>
+                        <li><span>Canva</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="planguages">
+                    <ul>
+                        <li><span>C</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>ReactJS</span></li>
+                        <li><span>Python</span></li>
+                        <li><span>Java</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Confidence</span></li>
+                        <li><span>Communicational Skills</span></li>
+                        <li><span>Leadership skills</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- photos------------------------------------- -->
+
+
+<div id="photos">
+    <div class="container">
+        <h1 class="sub-title">My Clicks</h1>
+        <div class="photo-list">
+            <div>
+                    <a href="https://www.pexels.com/search/nature/"><img src="pic1.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.pexels.com/search/nature/"><img src="pic2.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.pexels.com/search/nature/"><img src="pic3.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.pexels.com/search/nature/"><img src="pic4.jpg" height="150px" alt=""></a>
+                </div>
+                <div>
+                    <a href="https://www.pexels.com/search/nature/"><img src="pic5.jpg" height="150px" alt=""></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- contact---------------------- -->
+<br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i> Vanshchauhan1310@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9818270753</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vansh-raj-chauhan-64b50a258/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/vanshraj___/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/vanshchauhan1310"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="resume.docx" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made wtih <i class="fas fa-heart"></i> by  Vansh Raj Chauhan. </p>
+    </div>
+</div> 
+
+
+
+<script>
+
+        var tablinks = document. getElementsByClassName ("tab-links");
+        var tabcontents = document. getElementsByClassName ("tab-contents");
+        
+        function opentab (tabname){
+            for(tablink of tablinks){
+            tablink. classList. remove ("active-link");
+            }
+
+            for (tabcontent of tabcontents){
+            tabcontent. classList. remove("active-tab");
+            }
+            event. currentTarget. classList. add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+</script>
+</body>
+</html>
